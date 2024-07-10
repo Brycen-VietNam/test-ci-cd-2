@@ -10,11 +10,4 @@ services:
       DATABASE_HOST: "db"
     ports:
       - "3000:3001"
-    depends_on:
-      - db
-      - cache
-    volumes:
-      - reports:/app/robot/result
     command: npm run start:prod
-volumes:
-  reports:

@@ -19,7 +19,7 @@ jobs:
       - name: Build and run Docker container
         run: |
           docker-compose -f docker-test.yml up -d
-          docker run -v $(pwd)/output:/output servermycontainer
+          docker run -v $(pwd)/output:/output server
 
       - name: Upload artifact
         uses: actions/upload-artifact@v2

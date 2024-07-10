@@ -19,7 +19,7 @@ jobs:
       - name: Build and run Docker container
         run: |
           docker build -t mycontainer .
-          docker run -v $(pwd)/output:/output mycontainer
+          docker run -v $(pwd)/output:/output2 mycontainer
 
       - name: Upload artifact
         uses: actions/upload-artifact@v2

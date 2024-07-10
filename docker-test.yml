@@ -10,3 +10,5 @@ services:
       DATABASE_HOST: "db"
     ports:
       - "3000:3001"
+    volumes:
+      - $(pwd)/output:/output2

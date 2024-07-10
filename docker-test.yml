@@ -10,4 +10,3 @@ services:
       DATABASE_HOST: "db"
     ports:
       - "3000:3001"
-    command: npm run start:prod

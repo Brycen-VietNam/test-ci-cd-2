@@ -11,4 +11,4 @@ services:
     ports:
       - "3000:3001"
     volumes:
-      - "./server/output:/output2"
+      - "./output:/output2"

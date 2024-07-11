@@ -23,7 +23,6 @@ jobs:
       - name: Build and run Docker container
         run: |
           docker-compos
-        continue-on-error: true
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
